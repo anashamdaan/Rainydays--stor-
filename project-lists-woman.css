@@ -1,0 +1,177 @@
+body, html {
+    margin: 0;
+    padding: 0;
+     font-family: 'Libre Baskerville', serif;
+    font-size: 16px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    height: 5em;
+    
+}
+
+img {
+    width:17em;
+ }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.9em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.icons {
+    color: #000000;
+}
+
+#user-actions a {
+    text-decoration: none;
+    color: #18076e;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+
+h2 {
+    color: #8b0101;
+}
+    
+.store {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    width: 300px; 
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-info {
+    padding: 16px;
+}
+
+.product-brand,
+.product-name {
+    margin: 0;
+    font-weight: normal;
+}
+
+.product-price {
+    margin: 8px 0;
+    color: #e44d26;
+    font-weight: bold;
+}
+
+
+.site-footer {
+    background: linear-gradient(110deg, #e01933 60%,#a30c11  60%);  
+    background-color: #ffffffd0;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-top {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+footer,p{
+    color: rgb(0, 0, 0);
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .footer-middle {
+        flex-direction: column;
+    }
+
+   
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px 10px; 
+    }
+  
+    nav ul, .footer-middle {
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    nav li {
+        font-size: 1.5em; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+  
+    .icons {
+        order: -1; 
+        margin-bottom: 10px; 
+    }
+
+
+   

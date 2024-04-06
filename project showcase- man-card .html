@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project card-man</title>
+    <link rel="stylesheet" href="project showcase-man-card.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
+  <script>function changeImage(thumbnail) {
+    document.getElementById('main-image').src = thumbnail.src;
+  }
+  </script>
+        
+    
+</head>
+<body>
+    <header>
+       
+        <img src="imags/logo.png" alt="Logo" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project-lists-man.html">Shop</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="user-actions">
+            <a href="login.html">Login</a>
+            <a href="singup.html">SignUp</a>
+        
+        </div>
+    
+    
+
+           
+        <div class="nav-icons">
+          <a href="shopping-bage.html">
+          <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+              <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg> 
+          </a> 
+                       <a href="favorite.html">
+                      <svg class="icons" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                    </a>
+                    </div>
+            </nav>
+    
+    </header>
+
+    <div class="product-card">
+        <div class="product-images">
+           
+          <img id="main-image" src="imags/man 1.jpg" alt="Main Product Image" class="main-image">
+          <div class="thumbnails">
+            <img onclick="changeImage(this)" src="imags/man2.jpg" alt="Thumbnail 1" class="thumbnail">
+            <img onclick="changeImage(this)" src="imags/man3.jpg" alt="Thumbnail 2" class="thumbnail">
+            <img onclick="changeImage(this)" src="imags/man4.jpg" alt="Thumbnail 3" class="thumbnail">
+          </div>
+        </div>
+      </div>
+      
+        </div>
+        <div class="product-info">
+            <h1> <span>Dahlie
+              Jacket Solution</span>
+               
+               
+                 </h1>
+          <h2>'Cross-country jacket for training at a moderate pace
+            Cross-country jacket with elastic panels in the back and under the arms, which ensure full mobility and ventilation in the ski track. The jacket is made of 
+            a 3-layer softshell material with a water-repellent membrane. High collar with brushed inside keeps you warm and comfortable during your workout.</h2>
+          <p class="price"> <span>NOK 1,499</span></p>
+          <div class="sizes">
+            <button>XS</button>
+            <button>S</button>
+            <button>M</button>
+            <button>L</button>
+            <button>XL</button>
+            <button>XXL</button>
+          </div>
+          <button class="add-to-cart">Add to Cart</button>
+
+          <button class="favorite">Favorite</button>
+        </div>
+      </div>
+      
+      <footer class="site-footer">
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#about">ABOUT US</a> |
+                <a href="#contact">CONTACT US</a> |
+                <a href="#delivery">DELIVERY & RETURNS</a> |
+                <a href="#faqs">KLARNA FAQS</a> |
+                <a href="#stores">OUR STORES</a> |
+                <a href="#privacy">PRIVACY POLICY</a> |
+                <a href="#sitemap">SITEMAP</a> |
+                <a href="#terms">TERMS & CONDITIONS</a>
+            </nav>
+       
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Onu. All Rights Reserved.</p>
+            <p>Onu Clothing Registered office UNIT S13 HASTINGWOOD INDUSTRIAL PARK, BIRMINGHAM, norway, B24 9QR, Registered in norway</p>
+            <p>Company Registration Number 000000 VAT no. 000000</p>
+        </div>
+    </footer>
+</body>
+</html>

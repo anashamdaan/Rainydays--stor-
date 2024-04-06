@@ -1,0 +1,305 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+     font-family: 'Libre Baskerville', serif;
+    font-size: 16px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    height: 5em;
+    
+}
+
+img {
+    width:17em;
+ }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.9em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.icons {
+    color: #000000;
+}
+
+#user-actions a {
+    text-decoration: none;
+    color: #18076e;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.hero-section {
+    position: relative;
+    
+
+}
+
+
+    
+
+.hero-image {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 20%; 
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px; 
+  
+}
+
+.hero-image.left {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 30%;
+    
+    left: 5%;
+    top: 22em;
+    z-index: 1;
+    height: 35em;
+    background-position: center;
+}
+
+.hero-image.center {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 30%;
+    height: 35em;
+    position: relative;
+    top: 25em;
+    left: 18%; 
+    
+    z-index: 2;
+    background-position: center;
+    
+}
+
+.hero-image.right {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+   width: 25%;
+   height: 35em;
+    right: 30%;
+    z-index: 1;
+    top: 27em;
+    background-position: center;
+}
+.hero-image.one {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 27%;
+    left: 70%;
+    top:-3em;
+    z-index: 1;
+    height: 35em;
+    background-position: center;
+ }
+
+ .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   
+    color: #000000; 
+    z-index: 3; 
+}
+
+
+
+.login-form-container {
+    background-color: #ffffff00; 
+    padding: 20px;
+    border-radius: 20px; 
+    width: 30%;
+    margin: 50px auto; 
+    text-align: left;
+    position: relative;
+    bottom:60em;
+    z-index: 5;
+}
+
+#login-form h1 {
+    
+    color: #ffffff;
+}
+
+#login-form h4 {
+    
+    color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+}
+
+#login-form button {
+    background-color: #ff4b5c; 
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+#login-form button:hover {
+    background-color: #e04347;
+}
+
+
+
+
+
+.site-footer {
+    background: linear-gradient(110deg, #e01933 60%,#a30c11  60%);  
+    background-color: #ffffffd0;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-top {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+footer,p{
+    color: rgb(0, 0, 0);
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+          
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px 10px; /
+    }
+  
+    nav ul, .footer-middle {
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    nav li {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+        font-size: 1.5em; 
+    }
+  
+    .icons {
+        order: -1; 
+        margin-bottom: 10px; 
+    }
+
+    .hero-section {
+        position: relative;
+    }
+
+    .hero-image.left, .hero-image.center, .hero-image.right, .hero-image.one {
+        width: 100%; 
+        position: relative; 
+        left: 50%;
+        bottom: -20em;
+        transform: translateX(-50%); 
+        top: initial; 
+        margin-bottom: 20px; 
+    }
+
+    .login-form-container {
+        width: 80%; 
+        margin: 20px auto; 
+        bottom: initial; 
+        position: relative;
+        bottom:120em;
+    }
+
+    .hero-content {
+        position: static; 
+        padding: 20px; 
+        text-align: center; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    body, html {
+        font-size: 14px; 
+    }
+
+    nav li {
+        font-size: 1.2em; 
+    }
+
+    .hero-image {
+        width: 80%; 
+      
+    }
+
+    .login-form-container {
+        position: relative;
+        bottom: 130em;
+        padding: 1em; 
+        width: auto; 
+        
+    }
+
+    .form-group input[type="text"], .form-group input[type="password"], #login-form button {
+        padding: 15px; 
+    }
+}

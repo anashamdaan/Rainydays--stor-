@@ -1,0 +1,260 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+     font-family: 'Libre Baskerville', serif;
+    font-size: 16px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    height: 5em;
+    
+}
+
+img {
+    width:17em;
+ }
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.9em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+
+}
+
+.icons {
+    color: #000000;
+}
+
+#user-actions a {
+    text-decoration: none;
+    color: #18076e;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+
+
+
+span { 
+    color: #ff4b5c;
+    
+    font-size: 5em;
+    border: #000000;
+}
+h2 {
+    color: #ffffff;
+    position: relative;
+    top: 2em;
+}
+    
+.store {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+
+
+.product-card2,p {
+    color: #ffffff;
+    
+
+}
+
+.product-card3,p {
+    color: #ffffff;
+    
+
+}
+
+.product-link2 {
+    text-decoration: none; 
+    display: flexbox; 
+    
+}
+
+.product-card2 {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    border: #000000; 
+    width: 30em;
+    height: 40em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-image: url('imags/orange.webp');
+    background-position:top ;
+    cursor: pointer; 
+
+}
+
+    
+ .product-card3 {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 30em;
+     height: 40em;
+     margin: 10px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+     text-align: center;
+     background-image: url(imags/all\ man.jpg);
+     background-position:top ;
+ }
+
+
+
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 20px;
+    }
+}
+
+.site-footer {
+    background: linear-gradient(110deg, #e01933 60%,#a30c11  60%);  
+    background-color: #ffffffd0;
+    color: #333;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-top {
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+footer,p{
+    color: rgb(0, 0, 0);
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+   
+   
+        
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px 10px; 
+    }
+  
+    nav ul, .footer-middle {
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    nav li {
+        position: center;
+        font-size: 1.5em; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+  
+    .icons {
+        order: -1; 
+        margin-bottom: 10px; 
+    }
+
+        .store {
+            flex-direction: column; 
+        }
+    
+        .product-card2, .product-card3 {
+            width: 90%; 
+            margin: 10px auto; 
+            height: 10; 
+        }
+    
+        .footer-middle {
+            flex-direction: column;
+        }
+    }
+    
+
+    @media (max-width: 480px) {
+        body, html {
+            font-size: 14px; 
+        }
+    
+        header img {
+            width: 80%; 
+            margin: 0 auto; 
+        }
+    
+        nav ul,  {
+            flex-direction: column; 
+            align-items: center; 
+        }
+      
+        nav li {
+            font-size: 1.5em;
+            margin-right: 0; 
+            margin-bottom: 10px; /
+        }
+      
+        .icons {
+            order: -1; 
+            margin-bottom: 10px; 
+        }
+    
+        #user-actions a {
+            font-size: 1.2em; 
+        }
+    
+        span {
+            font-size: 3em; 
+        }
+    
+        .store, .footer-middle {
+            flex-direction: column; 
+        }
+    
+        .product-card2, .product-card3 {
+            width: 100%; 
+            margin: 10px 0; 
+        }
+    
+        .site-footer {
+            font-size: 12px; 
+        }
+    }
+    
