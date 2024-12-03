@@ -33,3 +33,16 @@ To run the project locally, follow these steps:
    git clone https://github.com/anashamdaan/Rainydays-Shop
 
 
+### Project Pages
+Home Page (index.html):
+
+Displays a curated showcase of RainyDays products.
+Product Pages (project-lists-man.html, project-lists-woman.html):
+
+Separate sections for men's and women's rainwear collections.
+Shopping Cart (shopping-bage.html):
+
+View selected products, modify quantities, and proceed to checkout.
+Authentication Pages (login.html, singup.html):
+
+Login and signup functionality for user accounts.
