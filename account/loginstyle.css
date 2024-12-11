@@ -1,0 +1,169 @@
+body {
+    font-family: 'Fjalla One', 'Libre Baskerville', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#user-actions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    color: #333;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.hero-section img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.login-form-container {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h1 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-top nav {
+    margin-bottom: 10px;
+}
+
+.footer-top nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-top nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 0.8em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section img {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #login-form h1 {
+        font-size: 1.5em;
+    }
+
+    .form-group input {
+        font-size: 0.9em;
+    }
+
+    #login-form button {
+        font-size: 0.9em;
+    }
+}

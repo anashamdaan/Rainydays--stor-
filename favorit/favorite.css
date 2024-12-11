@@ -1,0 +1,175 @@
+body {
+    font-family: 'Fjalla One', 'Libre Baskerville', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    height: 50px;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    color: #333;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+
+.page {
+    padding: 20px;
+}
+
+.block-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.block-heading h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.shopping-cart {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.shopping-cart.dark {
+    background: #f9f9f9;
+}
+
+.product {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.product:last-child {
+    border-bottom: none;
+}
+
+.product img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.product .info {
+    flex-grow: 1;
+}
+
+.product .product-name a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.product .product-name a:hover {
+    text-decoration: underline;
+}
+
+.product .product-info {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.quantity-input {
+    width: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #007BFF;
+    font-weight: bold;
+    text-align: right;
+}
+
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-top nav {
+    margin-bottom: 10px;
+}
+
+.footer-top nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+
+.footer-top nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 0.8em;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .product {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product img {
+        max-width: 100%;
+    }
+
+    .quantity-input {
+        width: 100%;
+    }
+
+    .price {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .block-heading h1 {
+        font-size: 2em;
+    }
+
+    .product .product-name a {
+        font-size: 1.2em;
+    }
+
+    .product .product-info {
+        font-size: 0.9em;
+    }
+
+    .price {
+        font-size: 1.2em;
+    }
+}

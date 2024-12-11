@@ -4,39 +4,64 @@
 body, html {
     margin: 0;
     padding: 0;
-     font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 16px; 
     
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background: #fff;
-    height: 5em;
-    
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-img {
-    width:12em;
- }
+#logo {
+    height: 50px;
+}
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 1.9em;
-}
-
-nav a {
+nav ul li a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
+}
 
+#user-actions a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.nav-icons a {
+    margin-left: 15px;
+    color: #333;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
+}
+#user-actions a {
+    text-decoration: none;
+    color: #18076e;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.icons {
+    width: 24px;
+    height: 24px;
 }
 
 .icons {
@@ -67,8 +92,6 @@ nav a {
     top: 50%;
     transform: translateY(-50%);
     border-radius: 20px; 
-  
-  
 }
 
 .hero-image.left {
@@ -100,8 +123,8 @@ nav a {
 .hero-image.right {
     border: 2px solid #ffffff;
     border-radius: 20px;
-   width: 25%;
-   height: 35em;
+    width: 25%;
+    height: 35em;
     right: 30%;
     z-index: 1;
     top: 27em;
@@ -117,9 +140,9 @@ nav a {
     z-index: 1;
     height: 35em;
     background-position: center;
- }
+}
 
- .hero-content {
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -131,12 +154,10 @@ nav a {
 
 h1 {
     font-size: 3rem;
-  position: relative;
-  right: 7em;
-  bottom: 3em;
-  color: #ffffff;
-  
-  
+    position: relative;
+    right: 7em;
+    bottom: 3em;
+    color: #ffffff;
 }
 
 h3 {
@@ -181,20 +202,19 @@ button {
     color: black;
     display: inline-block; 
   }
-  
-  .product-card,p{ 
+.product-card,p{ 
     color: #ffffff;
-  }
-  .product-card1,p{ 
+}
+    .product-card1,p{ 
     color: #ffffff;
-  }
-  .product-card2,p{ 
+    }
+    .product-card2,p{ 
     color: #ffffff;
-  }
-  .product-card3,p{ 
+    }
+    .product-card3,p{ 
     color: #ffffff;
-  }
-  .product-card {
+}
+    .product-card {
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 20em;
@@ -204,9 +224,9 @@ button {
     background-position: center;
     background-size: cover; 
     cursor: pointer;
-  }
+    }
 
-   .product-card1  {
+    .product-card1  {
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 20em;
@@ -216,9 +236,9 @@ button {
     background-position: center;
     background-size: cover; 
     cursor: pointer; 
-  }
+    } 
 
-   .product-card2  {
+    .product-card2  {
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 20em;
@@ -228,9 +248,9 @@ button {
     background-position: center;
     background-size: cover; 
     cursor: pointer; 
-  }
+    }
 
-   .product-card3 {
+    .product-card3 {
     border: 2px solid #ffffff;
     border-radius: 20px;
     width: 20em;
@@ -240,23 +260,20 @@ button {
     background-position: center;
     background-size: cover; 
     cursor: pointer; 
-  }
+}
 
-  
-  .product-card1 {
+    .product-card1 {
     background-image: url(imags/man2.jpg);
-  }
-  
-  .product-card2 {
+    }
+.product-card2 {
     background-image: url(imags/home\ bag.webp);
-  }
-  
-  .product-card3 {
+}
+.product-card3 {
     background-image: url(imags/home\ bag1.webp);
-  }
-  .product-card {
+}
+.product-card {
     background-image: url(imags/orange3.jpg);
-  }
+}
 
 .about-us{ 
     border: 2px solid #ffffff;
@@ -267,10 +284,10 @@ button {
     padding: 20px;
     text-align: center;
     color: #ffffff;
-   margin: 10%;
-   font-size: 2em;
-   background-image:url(imags/new_student.jpg);
-   
+    margin: 10%;
+    font-size: 2em;
+    background-image:url(imags/new_student.jpg);
+    
 }
 
 
@@ -377,25 +394,6 @@ footer,p{
     margin-bottom: 10px;
 }
 
-
-
-  
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto; 
-        padding: 20px 10px; 
-    }
-  
-  
-
-
-   
-
-
-
-   
-   
 @media only screen and (max-width: 767px) {
     .header, .store, .contact-us, .about-us, .site-footer {
         flex-direction: column;
@@ -414,13 +412,13 @@ footer,p{
         flex-direction: column; 
         align-items: center; 
     }
-  
+
     nav li {
         font-size: 1.5em;
         margin-right: 0; 
         margin-bottom: 10px; /
     }
-  
+
     .icons {
         order: -1; 
         margin-bottom: 10px; 
@@ -447,14 +445,14 @@ footer,p{
 
 .hero-content {
     font-size: 2rem; 
-   position: relative;
-   left:6em;
+    position: relative;
+    left:6em;
     bottom:31em;
 }
 
 .a,button{
     font-size: 2rem; 
-   position: relative;
-   right: 2.2em;
+    position: relative;
+    right: 2.2em;
     bottom:3em;
 }
