@@ -1,6 +1,6 @@
 # RainyDays Shop
 
-![RainyDays Shop](/imags/museum-screenshot 1.png)  
+![RainyDays Shop](/imags/museum-screenshot.png)  
 *An online store for stylish and functional rainwear.*
 
 ---
